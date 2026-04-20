@@ -82,7 +82,7 @@ export default function Nav() {
               letterSpacing: "-0.02em",
             }}
           >
-            Hudson Web
+            Hudson Web Group
           </span>
         </a>
 
