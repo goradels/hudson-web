@@ -3,6 +3,7 @@ import { posts } from "@/lib/posts";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import BlogPostsList from "@/components/BlogPostsList";
+import JsonLd from "@/components/JsonLd";
 
 const categoryColors: Record<string, string> = {
   "SEO & Content": "#2d6a4f",
@@ -22,8 +23,30 @@ export const metadata = {
 export default function BlogPage() {
   const [featured, ...rest] = posts;
 
+  const blogSchema = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    name: "Hudson Web Group Blog",
+    description:
+      "Practical digital marketing insights, guides, and strategy from the Hudson Web team.",
+    url: "https://hudsonwebgroup.com/blog",
+    publisher: {
+      "@type": "Organization",
+      name: "Hudson Web Group",
+      url: "https://hudsonwebgroup.com",
+    },
+    blogPost: posts.map((p) => ({
+      "@type": "BlogPosting",
+      headline: p.title,
+      description: p.excerpt,
+      datePublished: p.isoDate,
+      url: `https://hudsonwebgroup.com/blog/${p.id}`,
+    })),
+  };
+
   return (
     <>
+      <JsonLd data={blogSchema} />
       <Nav />
       <main style={{ background: "#fafaf8", minHeight: "100vh" }}>
         {/* Hero */}

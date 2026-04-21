@@ -3,12 +3,17 @@ import Link from "next/link";
 import { posts, getPost } from "@/lib/posts";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import JsonLd from "@/components/JsonLd";
 
 export async function generateStaticParams() {
   return posts.map((p) => ({ id: p.id }));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
   const { id } = await params;
   const post = getPost(id);
   if (!post) return {};
@@ -27,7 +32,11 @@ const categoryColors: Record<string, string> = {
   Strategy: "#2c3e50",
 };
 
-export default async function BlogPost({ params }: { params: Promise<{ id: string }> }) {
+export default async function BlogPost({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
   const { id } = await params;
   const post = getPost(id);
   if (!post) notFound();
@@ -55,10 +64,7 @@ export default async function BlogPost({ params }: { params: Promise<{ id: strin
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <JsonLd data={jsonLd} />
       <Nav />
       <main style={{ background: "#fafaf8", minHeight: "100vh" }}>
         {/* Article header */}
@@ -84,12 +90,26 @@ export default async function BlogPost({ params }: { params: Promise<{ id: strin
               }}
             >
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                <path d="M12 7H2M2 7L7 2M2 7L7 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                <path
+                  d="M12 7H2M2 7L7 2M2 7L7 12"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
               </svg>
               Back to Blog
             </Link>
 
-            <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.5rem", flexWrap: "wrap" }}>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "1rem",
+                marginBottom: "1.5rem",
+                flexWrap: "wrap",
+              }}
+            >
               <span
                 style={{
                   fontSize: "0.65rem",
@@ -110,7 +130,9 @@ export default async function BlogPost({ params }: { params: Promise<{ id: strin
               >
                 {post.date}
               </time>
-              <span style={{ fontSize: "0.75rem", color: "rgba(17,17,17,0.35)" }}>
+              <span
+                style={{ fontSize: "0.75rem", color: "rgba(17,17,17,0.35)" }}
+              >
                 {post.readTime}
               </span>
             </div>
@@ -142,7 +164,9 @@ export default async function BlogPost({ params }: { params: Promise<{ id: strin
         </header>
 
         {/* Article body */}
-        <article style={{ maxWidth: "800px", margin: "0 auto", padding: "4rem 2rem" }}>
+        <article
+          style={{ maxWidth: "800px", margin: "0 auto", padding: "4rem 2rem" }}
+        >
           <div style={{ maxWidth: "680px" }}>
             {post.body.map((section, i) => {
               if (section.type === "paragraph") {
@@ -229,9 +253,20 @@ export default async function BlogPost({ params }: { params: Promise<{ id: strin
               margin: "4rem 0",
             }}
           >
-            <div style={{ flex: 1, height: "1px", background: "rgba(0,0,0,0.08)" }} />
-            <div style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#b8903a" }} />
-            <div style={{ flex: 1, height: "1px", background: "rgba(0,0,0,0.08)" }} />
+            <div
+              style={{ flex: 1, height: "1px", background: "rgba(0,0,0,0.08)" }}
+            />
+            <div
+              style={{
+                width: "6px",
+                height: "6px",
+                borderRadius: "50%",
+                background: "#b8903a",
+              }}
+            />
+            <div
+              style={{ flex: 1, height: "1px", background: "rgba(0,0,0,0.08)" }}
+            />
           </div>
 
           {/* CTA */}
@@ -249,10 +284,24 @@ export default async function BlogPost({ params }: { params: Promise<{ id: strin
             }}
           >
             <div>
-              <p style={{ fontWeight: 700, fontSize: "1.1rem", color: "#111111", margin: "0 0 0.4rem 0", letterSpacing: "-0.02em" }}>
+              <p
+                style={{
+                  fontWeight: 700,
+                  fontSize: "1.1rem",
+                  color: "#111111",
+                  margin: "0 0 0.4rem 0",
+                  letterSpacing: "-0.02em",
+                }}
+              >
                 Ready to put this into practice?
               </p>
-              <p style={{ fontSize: "0.875rem", color: "rgba(17,17,17,0.45)", margin: 0 }}>
+              <p
+                style={{
+                  fontSize: "0.875rem",
+                  color: "rgba(17,17,17,0.45)",
+                  margin: 0,
+                }}
+              >
                 Our team helps businesses turn strategy into results.
               </p>
             </div>
@@ -364,10 +413,20 @@ export default async function BlogPost({ params }: { params: Promise<{ id: strin
                           borderTop: "1px solid rgba(0,0,0,0.07)",
                         }}
                       >
-                        <span style={{ fontSize: "0.7rem", color: "rgba(17,17,17,0.3)" }}>
+                        <span
+                          style={{
+                            fontSize: "0.7rem",
+                            color: "rgba(17,17,17,0.3)",
+                          }}
+                        >
                           {rp.date}
                         </span>
-                        <span style={{ fontSize: "0.7rem", color: "rgba(17,17,17,0.3)" }}>
+                        <span
+                          style={{
+                            fontSize: "0.7rem",
+                            color: "rgba(17,17,17,0.3)",
+                          }}
+                        >
                           {rp.readTime}
                         </span>
                       </div>
