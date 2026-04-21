@@ -2,18 +2,18 @@
 
 const stats = [
   {
-    value: "10,000+",
-    label: "Leads Generated",
+    value: "4,800+",
+    label: "Marketing Qualified Leads Generated",
     description: "Qualified leads delivered to clients across all verticals",
   },
   {
-    value: "$500K",
+    value: "$4.5M",
     label: "Revenue Generated",
     description: "Directly attributable revenue produced for our clients",
   },
   {
-    value: "$2.5M",
-    label: "In Ad Spend Managed",
+    value: "$1.2M",
+    label: "Targeted Ad Spend",
     description: "Paid media budget managed with precision and efficiency",
   },
 ];
@@ -24,17 +24,33 @@ export default function About() {
       {/* About Section */}
       <section
         id="about"
-        style={{ background: "#fafaf8", padding: "8rem 2rem", position: "relative" }}
+        style={{
+          background: "#fafaf8",
+          padding: "8rem 2rem",
+          position: "relative",
+        }}
       >
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <div
-            style={{ display: "grid", gridTemplateColumns: "1fr 2fr", gap: "4rem", alignItems: "start" }}
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr 2fr",
+              gap: "4rem",
+              alignItems: "start",
+            }}
             className="about-grid"
           >
             {/* Left */}
             <div>
               <span className="section-label">About Us</span>
-              <div style={{ width: "40px", height: "1px", background: "rgba(184,144,58,0.3)", marginTop: "1.25rem" }} />
+              <div
+                style={{
+                  width: "40px",
+                  height: "1px",
+                  background: "rgba(184,144,58,0.3)",
+                  marginTop: "1.25rem",
+                }}
+              />
             </div>
 
             {/* Right */}
@@ -62,13 +78,16 @@ export default function About() {
                   margin: 0,
                 }}
               >
-                We are a results-driven digital marketing agency built for businesses that refuse to
-                stand still. From day one, our focus has been simple: deliver strategies that generate
-                real, measurable outcomes — not vanity metrics. We combine sharp creative thinking with
-                rigorous data analysis to build campaigns that attract the right audience, hold their
-                attention, and convert them into loyal customers. Whether you&apos;re scaling a startup or
-                modernising an established brand, we bring the expertise, technology, and relentless
-                commitment needed to make your digital presence work harder than ever before.
+                We are a results-driven digital marketing agency built for
+                businesses that refuse to stand still. From day one, our focus
+                has been simple: deliver strategies that generate real,
+                measurable outcomes — not vanity metrics. We combine sharp
+                creative thinking with rigorous data analysis to build campaigns
+                that attract the right audience, hold their attention, and
+                convert them into loyal customers. Whether you&apos;re scaling a
+                startup or modernising an established brand, we bring the
+                expertise, technology, and relentless commitment needed to make
+                your digital presence work harder than ever before.
               </p>
             </div>
           </div>
@@ -92,7 +111,11 @@ export default function About() {
       >
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <div
-            style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 0 }}
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(3, 1fr)",
+              gap: 0,
+            }}
             className="stats-grid"
           >
             {stats.map((stat, i) => (
@@ -101,7 +124,10 @@ export default function About() {
                 className="stat-item"
                 style={{
                   padding: "2.5rem 3rem",
-                  borderRight: i < stats.length - 1 ? "1px solid rgba(0,0,0,0.07)" : "none",
+                  borderRight:
+                    i < stats.length - 1
+                      ? "1px solid rgba(0,0,0,0.07)"
+                      : "none",
                   animationDelay: `${i * 0.15}s`,
                 }}
               >
@@ -111,7 +137,8 @@ export default function About() {
                     fontWeight: 800,
                     letterSpacing: "-0.04em",
                     lineHeight: 1,
-                    background: "linear-gradient(135deg, #b8903a 0%, #d4a84e 100%)",
+                    background:
+                      "linear-gradient(135deg, #b8903a 0%, #d4a84e 100%)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                     backgroundClip: "text",
@@ -120,10 +147,24 @@ export default function About() {
                 >
                   {stat.value}
                 </div>
-                <div style={{ fontSize: "0.9rem", fontWeight: 600, color: "#111111", marginBottom: "0.5rem", letterSpacing: "0.01em" }}>
+                <div
+                  style={{
+                    fontSize: "0.9rem",
+                    fontWeight: 600,
+                    color: "#111111",
+                    marginBottom: "0.5rem",
+                    letterSpacing: "0.01em",
+                  }}
+                >
                   {stat.label}
                 </div>
-                <div style={{ fontSize: "0.8rem", color: "rgba(17,17,17,0.4)", lineHeight: 1.5 }}>
+                <div
+                  style={{
+                    fontSize: "0.8rem",
+                    color: "rgba(17,17,17,0.4)",
+                    lineHeight: 1.5,
+                  }}
+                >
                   {stat.description}
                 </div>
               </div>
