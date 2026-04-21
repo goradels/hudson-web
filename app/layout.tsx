@@ -11,7 +11,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Digital Marketing Agency | Digital Marketing that Converts",
+  title: "Hudson Web Group | Digital Marketing that Converts",
   description:
     "A full-service digital marketing agency specialising in web design, SEO, digital advertising, email marketing, and bespoke software.",
 };
