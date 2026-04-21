@@ -124,6 +124,52 @@ body {
   color: var(--accent);
 }
 
+/* ── Sienna Accessibility Widget — Hudson Web Group theme overrides ── */
+/* Use `body .asw-*` for higher specificity than the widget's own !important rules */
+
+body .asw-menu-btn {
+  background: linear-gradient(135deg, #b8903a 0%, #8a6820 100%) !important;
+  outline: 5px solid #8a6820 !important;
+  box-shadow: 0 5px 15px rgba(184, 144, 58, 0.35), 0 2px 4px rgba(138, 104, 32, 0.25) !important;
+}
+
+body .asw-menu-header {
+  background: linear-gradient(135deg, #b8903a 0%, #8a6820 100%) !important;
+}
+
+body .asw-menu-header svg {
+  fill: #8a6820 !important;
+}
+
+body .asw-menu-reset-footer-btn {
+  background: linear-gradient(135deg, #b8903a 0%, #8a6820 100%) !important;
+}
+
+body .asw-btn:hover,
+body .asw-btn.asw-selected {
+  border-color: #b8903a !important;
+}
+
+body .asw-btn.asw-selected svg,
+body .asw-btn.asw-selected span {
+  fill: #b8903a !important;
+  color: #b8903a !important;
+}
+
+body .asw-btn.asw-selected:after {
+  background-color: #b8903a !important;
+}
+
+body .asw-plus:hover,
+body .asw-minus:hover {
+  border-color: #b8903a !important;
+}
+
+body .asw-footer a:hover,
+body .asw-footer a:hover span {
+  color: #b8903a !important;
+}
+
 .section-label {
   font-size: 0.7rem;
   letter-spacing: 0.2em;

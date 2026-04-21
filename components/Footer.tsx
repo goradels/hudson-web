@@ -1,5 +1,7 @@
 "use client";
 
+import ContactForm from "./ContactForm";
+
 const footerLinks = [
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
@@ -39,7 +41,7 @@ export default function Footer() {
           style={{
             position: "relative",
             zIndex: 1,
-            maxWidth: "640px",
+            maxWidth: "720px",
             margin: "0 auto",
           }}
         >
@@ -56,7 +58,7 @@ export default function Footer() {
               letterSpacing: "-0.04em",
               lineHeight: 1.1,
               color: "#111111",
-              margin: "0 0 1.5rem 0",
+              margin: "0 0 1rem 0",
             }}
           >
             Ready to grow?
@@ -74,45 +76,7 @@ export default function Footer() {
             Tell us about your business and goals. We&apos;ll put together a
             tailored strategy and show you exactly how we can help you grow.
           </p>
-          <a
-            href="mailto:hello@gadelson1126@gmail.com"
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "0.75rem",
-              background: "linear-gradient(135deg, #b8903a 0%, #8a6820 100%)",
-              color: "#fff",
-              padding: "1rem 2.25rem",
-              borderRadius: "8px",
-              fontSize: "0.95rem",
-              fontWeight: 700,
-              textDecoration: "none",
-              letterSpacing: "0.01em",
-              transition: "opacity 0.2s, transform 0.2s",
-              boxShadow: "0 4px 20px rgba(184,144,58,0.2)",
-            }}
-            onMouseEnter={(e) => {
-              (e.currentTarget as HTMLElement).style.opacity = "0.88";
-              (e.currentTarget as HTMLElement).style.transform =
-                "translateY(-2px)";
-            }}
-            onMouseLeave={(e) => {
-              (e.currentTarget as HTMLElement).style.opacity = "1";
-              (e.currentTarget as HTMLElement).style.transform =
-                "translateY(0)";
-            }}
-          >
-            hello@hudsonwebgroup.com
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-              <path
-                d="M2 7H12M12 7L7 2M12 7L7 12"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </a>
+          <ContactForm />
         </div>
       </section>
 
