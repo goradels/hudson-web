@@ -310,6 +310,275 @@ export const posts: Post[] = [
       },
     ],
   },
+  {
+    id: "social-media-strategy-2025",
+    title: "Building a Social Media Strategy That Actually Drives Business",
+    excerpt:
+      "Posting for the sake of posting is a waste of time and resource. Here's how to build a social strategy rooted in business objectives — not vanity metrics.",
+    category: "Strategy",
+    date: "February 24, 2026",
+    readTime: "7 min read",
+    body: [
+      {
+        type: "paragraph",
+        text: "Most businesses approach social media the wrong way. They open accounts on every platform, post inconsistently, and then wonder why it isn't generating leads. The problem isn't social media — it's the absence of a coherent strategy.",
+      },
+      {
+        type: "heading",
+        text: "Start with the business goal, not the platform",
+      },
+      {
+        type: "paragraph",
+        text: "Before you think about content formats or posting frequency, ask: what do we want social media to do for the business? Drive awareness? Generate leads? Support retention? Your answer determines everything else — which platforms, what content, how you measure success.",
+      },
+      {
+        type: "heading",
+        text: "Choose fewer platforms and own them",
+      },
+      {
+        type: "paragraph",
+        text: "Being mediocre on five platforms is worse than being excellent on two. Pick the channels where your audience actually spends time and where your content type performs well. For most B2B businesses that's LinkedIn. For most consumer brands it's Instagram or TikTok. Resist the urge to be everywhere.",
+      },
+      {
+        type: "heading",
+        text: "The content mix that works",
+      },
+      {
+        type: "list",
+        items: [
+          "Educational content: builds trust and authority with your audience",
+          "Behind-the-scenes: humanises the brand and drives engagement",
+          "Social proof: client results, testimonials, case studies",
+          "Promotional: offers, services, CTAs — keep this to 20% or less",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Measure what matters: profile visits to website, DM enquiries, and leads generated — not likes. If social media isn't contributing to pipeline, it needs to change.",
+      },
+    ],
+  },
+  {
+    id: "local-seo-guide",
+    title: "The Local SEO Playbook: Get Found by Customers Near You",
+    excerpt:
+      "If your business serves a local area, local SEO is the highest-ROI organic channel available to you. This practical guide covers everything from Google Business Profile to local link building.",
+    category: "SEO & Content",
+    date: "February 17, 2026",
+    readTime: "8 min read",
+    body: [
+      {
+        type: "paragraph",
+        text: "When someone searches 'digital marketing agency near me' or 'plumber in Manchester', they have high intent and they're ready to act. Local SEO is about making sure your business appears — and appears well — when that search happens.",
+      },
+      {
+        type: "heading",
+        text: "Google Business Profile: your most important local asset",
+      },
+      {
+        type: "paragraph",
+        text: "A fully optimised, actively managed Google Business Profile drives more local visibility than almost any other single action. Complete every field, add photos regularly, respond to every review, and post updates at least once a week.",
+      },
+      {
+        type: "heading",
+        text: "The local ranking factors that matter most",
+      },
+      {
+        type: "list",
+        items: [
+          "Proximity: how close is the business to the searcher",
+          "Relevance: how well does your profile match the search query",
+          "Prominence: reviews, citations, backlinks, and engagement signals",
+          "NAP consistency: name, address, phone number must match everywhere",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Local link building",
+      },
+      {
+        type: "paragraph",
+        text: "Links from locally relevant websites — local press, business directories, chamber of commerce listings, sponsorships — carry significant weight for local rankings. Identify the 10–15 most authoritative local sites in your area and pursue links from each.",
+      },
+    ],
+  },
+  {
+    id: "conversion-rate-optimisation-basics",
+    title: "CRO Fundamentals: Turn More of Your Existing Traffic Into Customers",
+    excerpt:
+      "Most businesses focus on getting more traffic. The smarter move is converting more of the traffic you already have. A 1% improvement in conversion rate can double your revenue.",
+    category: "Web Design",
+    date: "February 10, 2026",
+    readTime: "6 min read",
+    body: [
+      {
+        type: "paragraph",
+        text: "Conversion Rate Optimisation is the practice of systematically improving the percentage of website visitors who take a desired action. It's one of the highest-leverage activities in digital marketing because the gains compound — and they don't require more ad spend.",
+      },
+      {
+        type: "heading",
+        text: "Where to start: find your biggest leaks",
+      },
+      {
+        type: "paragraph",
+        text: "Use analytics to identify where users are dropping off in your funnel. A high-traffic landing page with a 0.5% conversion rate is a bigger opportunity than a low-traffic page converting at 3%. Fix the leaks before you pump in more traffic.",
+      },
+      {
+        type: "heading",
+        text: "The highest-impact CRO changes",
+      },
+      {
+        type: "list",
+        items: [
+          "Headline clarity: does the headline immediately communicate the value?",
+          "Social proof placement: reviews and trust signals near the CTA",
+          "Form length: remove every field that isn't strictly necessary",
+          "Page speed: every second of delay costs you conversions",
+          "CTA copy: 'Get My Free Quote' outperforms 'Submit' every time",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Test one thing at a time",
+      },
+      {
+        type: "paragraph",
+        text: "A/B testing is the most reliable way to improve conversion rate. But you must test one variable at a time with sufficient traffic to reach statistical significance. Running five simultaneous tests on a low-traffic page produces noise, not insight.",
+      },
+    ],
+  },
+  {
+    id: "google-analytics-4-guide",
+    title: "Making Sense of Google Analytics 4: A Practical Guide",
+    excerpt:
+      "GA4 is fundamentally different from Universal Analytics — and most businesses are barely scratching the surface of what it can tell them. Here's how to actually use it.",
+    category: "Strategy",
+    date: "February 3, 2026",
+    readTime: "7 min read",
+    body: [
+      {
+        type: "paragraph",
+        text: "Google Analytics 4 replaced Universal Analytics in July 2023, and many businesses are still struggling with the transition. The interface is different, the data model is different, and the reports you relied on don't exist in the same form. Here's how to get oriented.",
+      },
+      {
+        type: "heading",
+        text: "The event-based model",
+      },
+      {
+        type: "paragraph",
+        text: "GA4 tracks everything as events — page views, clicks, form submissions, scroll depth, video plays. This is far more flexible than UA's session-based model, but it requires a different mental model when interpreting data.",
+      },
+      {
+        type: "heading",
+        text: "Key reports to set up first",
+      },
+      {
+        type: "list",
+        items: [
+          "Conversion tracking: define your key actions and mark them as conversions",
+          "Traffic acquisition: understand which channels are driving quality visitors",
+          "Landing page report: identify your highest and lowest-performing entry points",
+          "Funnel exploration: visualise where users are dropping out of your key journeys",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Connect GA4 to Google Search Console",
+      },
+      {
+        type: "paragraph",
+        text: "Linking GA4 with Search Console gives you organic keyword data directly within Analytics. This connection is invaluable for understanding which search queries are driving conversions — not just clicks.",
+      },
+    ],
+  },
+  {
+    id: "meta-ads-retargeting-strategy",
+    title: "How to Build a Meta Ads Retargeting Strategy That Converts",
+    excerpt:
+      "Most businesses run retargeting as an afterthought. Done well, it's one of the most efficient uses of paid media budget — reaching warm audiences who already know who you are.",
+    category: "Digital Advertising",
+    date: "January 27, 2026",
+    readTime: "6 min read",
+    body: [
+      {
+        type: "paragraph",
+        text: "Retargeting on Meta means showing ads to people who have already interacted with your brand — visited your website, engaged with your content, or watched your videos. These audiences convert at dramatically higher rates than cold audiences because the trust barrier is lower.",
+      },
+      {
+        type: "heading",
+        text: "Build segmented audiences, not one big bucket",
+      },
+      {
+        type: "paragraph",
+        text: "The biggest retargeting mistake is lumping everyone into a single audience. Someone who visited your homepage three weeks ago should see a different message than someone who added to cart yesterday. Segment by recency, page visited, and actions taken.",
+      },
+      {
+        type: "heading",
+        text: "Recommended audience segments",
+      },
+      {
+        type: "list",
+        items: [
+          "Website visitors in the last 7 days — hottest intent, highest bids",
+          "Product/service page visitors (not purchasers) — 30 days",
+          "Video viewers (50%+ watched) — warm awareness audience",
+          "Email list upload — reach existing contacts on social",
+          "Cart abandoners — separate creative, urgency-led messaging",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Don't neglect creative fatigue",
+      },
+      {
+        type: "paragraph",
+        text: "Retargeting audiences are smaller, so your ads reach the same people repeatedly. Refresh creative every 2–3 weeks or when frequency climbs above 3–4. Stale creative actively damages brand perception with your warmest audiences.",
+      },
+    ],
+  },
+  {
+    id: "brand-positioning-for-agencies",
+    title: "Brand Positioning: Why 'Full-Service' Is Killing Your Agency Growth",
+    excerpt:
+      "Trying to be everything to everyone is the fastest way to stand out to no one. A tightly defined brand position is the foundation of every high-growth agency we've seen.",
+    category: "Strategy",
+    date: "January 19, 2026",
+    readTime: "5 min read",
+    body: [
+      {
+        type: "paragraph",
+        text: "The most common positioning mistake we see from growing service businesses is radical generalism. 'We do everything for everyone' feels safe — you're not excluding any potential client. In practice, it means you win fewer pitches, attract lower-budget clients, and struggle to charge premium rates.",
+      },
+      {
+        type: "heading",
+        text: "The paradox of specificity",
+      },
+      {
+        type: "paragraph",
+        text: "The more specifically you define who you serve and what you do, the more attractive you become to that audience. A business owner who finds an agency that specialises in their exact industry, for businesses their exact size, will choose that agency over a generalist almost every time — and pay more for it.",
+      },
+      {
+        type: "heading",
+        text: "Three positioning levers",
+      },
+      {
+        type: "list",
+        items: [
+          "Vertical specialisation: serve one industry deeply (e.g. legal, healthcare, e-commerce)",
+          "Service specialisation: be the best at one thing rather than adequate at many",
+          "Audience specialisation: define by company size, geography, or growth stage",
+        ],
+      },
+      {
+        type: "heading",
+        text: "You don't have to turn away everyone else",
+      },
+      {
+        type: "paragraph",
+        text: "Strong positioning doesn't mean you literally refuse all other work. It means your marketing, your case studies, your website, and your sales conversations lead with your defined niche. The right clients self-select in — and they convert faster and pay better.",
+      },
+    ],
+  },
 ];
 
 export function getPost(id: string): Post | undefined {

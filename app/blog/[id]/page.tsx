@@ -231,7 +231,7 @@ export default async function BlogPost({ params }: { params: Promise<{ id: strin
               </p>
             </div>
             <a
-              href="/#contact"
+              href="#contact"
               style={{
                 background: "linear-gradient(135deg, #b8903a 0%, #8a6820 100%)",
                 color: "#fff",
