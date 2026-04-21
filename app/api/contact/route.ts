@@ -1,6 +1,6 @@
 import { Resend } from "resend";
 
-const resend = new Resend("re_ajLp7bXq_CMnVUWtcytJemufYngfEYNX3");
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 const FROM_ADDRESS = "Hudson Web Group <hello@hudsonwebgroup.com>";
 const OWNER_EMAIL = "gadelson1126@gmail.com";
