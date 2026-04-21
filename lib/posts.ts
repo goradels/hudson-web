@@ -3,7 +3,8 @@ export interface Post {
   title: string;
   excerpt: string;
   category: string;
-  date: string;
+  date: string;        // human-readable display date
+  isoDate: string;     // ISO 8601 for structured data / <time> tags
   readTime: string;
   body: Section[];
 }
@@ -22,6 +23,7 @@ export const posts: Post[] = [
       "With AI-generated search results reshaping how people find information, organic search strategy has changed — but it hasn't died. Here's why a strong SEO foundation remains your most durable digital asset.",
     category: "SEO & Content",
     date: "April 14, 2026",
+    isoDate: "2026-04-14",
     readTime: "6 min read",
     body: [
       {
@@ -66,6 +68,7 @@ export const posts: Post[] = [
       "Burning budget without the conversions to show for it? These five optimisation techniques have consistently driven down CPAs for our clients — and they work regardless of your industry.",
     category: "Digital Advertising",
     date: "April 7, 2026",
+    isoDate: "2026-04-07",
     readTime: "8 min read",
     body: [
       {
@@ -121,6 +124,7 @@ export const posts: Post[] = [
       "Most businesses set up a welcome email and call it done. These four automated flows go further — turning your list into a consistent revenue engine that runs without you.",
     category: "Email Marketing",
     date: "March 28, 2026",
+    isoDate: "2026-03-28",
     readTime: "7 min read",
     body: [
       {
@@ -172,6 +176,7 @@ export const posts: Post[] = [
       "Your website isn't a brochure — it's your best salesperson. These design principles consistently move the needle on conversion rate, whether you're selling a product, a service, or a consultation.",
     category: "Web Design",
     date: "March 19, 2026",
+    isoDate: "2026-03-19",
     readTime: "5 min read",
     body: [
       {
@@ -220,6 +225,7 @@ export const posts: Post[] = [
       "The right answer depends on your growth stage, budget, and how differentiated your processes are. Here's a practical framework for making the decision.",
     category: "Bespoke Software",
     date: "March 10, 2026",
+    isoDate: "2026-03-10",
     readTime: "6 min read",
     body: [
       {
@@ -268,6 +274,7 @@ export const posts: Post[] = [
       "Likes and impressions aren't revenue. This guide cuts through the noise and shows you exactly which metrics matter, how to track them, and what to do with what you find.",
     category: "Strategy",
     date: "March 3, 2026",
+    isoDate: "2026-03-03",
     readTime: "9 min read",
     body: [
       {
@@ -317,6 +324,7 @@ export const posts: Post[] = [
       "Posting for the sake of posting is a waste of time and resource. Here's how to build a social strategy rooted in business objectives — not vanity metrics.",
     category: "Strategy",
     date: "February 24, 2026",
+    isoDate: "2026-02-24",
     readTime: "7 min read",
     body: [
       {
@@ -365,6 +373,7 @@ export const posts: Post[] = [
       "If your business serves a local area, local SEO is the highest-ROI organic channel available to you. This practical guide covers everything from Google Business Profile to local link building.",
     category: "SEO & Content",
     date: "February 17, 2026",
+    isoDate: "2026-02-17",
     readTime: "8 min read",
     body: [
       {
@@ -409,6 +418,7 @@ export const posts: Post[] = [
       "Most businesses focus on getting more traffic. The smarter move is converting more of the traffic you already have. A 1% improvement in conversion rate can double your revenue.",
     category: "Web Design",
     date: "February 10, 2026",
+    isoDate: "2026-02-10",
     readTime: "6 min read",
     body: [
       {
@@ -454,6 +464,7 @@ export const posts: Post[] = [
       "GA4 is fundamentally different from Universal Analytics — and most businesses are barely scratching the surface of what it can tell them. Here's how to actually use it.",
     category: "Strategy",
     date: "February 3, 2026",
+    isoDate: "2026-02-03",
     readTime: "7 min read",
     body: [
       {
@@ -498,6 +509,7 @@ export const posts: Post[] = [
       "Most businesses run retargeting as an afterthought. Done well, it's one of the most efficient uses of paid media budget — reaching warm audiences who already know who you are.",
     category: "Digital Advertising",
     date: "January 27, 2026",
+    isoDate: "2026-01-27",
     readTime: "6 min read",
     body: [
       {
@@ -543,6 +555,7 @@ export const posts: Post[] = [
       "Trying to be everything to everyone is the fastest way to stand out to no one. A tightly defined brand position is the foundation of every high-growth agency we've seen.",
     category: "Strategy",
     date: "January 19, 2026",
+    isoDate: "2026-01-19",
     readTime: "5 min read",
     body: [
       {

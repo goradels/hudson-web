@@ -1,5 +1,3 @@
-"use client";
-
 export default function Hero() {
   return (
     <section
@@ -112,6 +110,7 @@ export default function Hero() {
         <div className="animate-fade-up-delay-3" style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
           <a
             href="#contact"
+            className="hero-cta-primary"
             style={{
               background: "linear-gradient(135deg, #b8903a 0%, #8a6820 100%)",
               color: "#fff",
@@ -125,19 +124,12 @@ export default function Hero() {
               transition: "opacity 0.2s, transform 0.2s",
               boxShadow: "0 4px 20px rgba(184,144,58,0.25)",
             }}
-            onMouseEnter={(e) => {
-              (e.currentTarget as HTMLElement).style.opacity = "0.88";
-              (e.currentTarget as HTMLElement).style.transform = "translateY(-1px)";
-            }}
-            onMouseLeave={(e) => {
-              (e.currentTarget as HTMLElement).style.opacity = "1";
-              (e.currentTarget as HTMLElement).style.transform = "translateY(0)";
-            }}
           >
             Start a Project
           </a>
           <a
             href="#services"
+            className="hero-cta-secondary"
             style={{
               background: "transparent",
               color: "#111111",
@@ -150,20 +142,17 @@ export default function Hero() {
               display: "inline-block",
               transition: "border-color 0.2s, color 0.2s",
             }}
-            onMouseEnter={(e) => {
-              (e.currentTarget as HTMLElement).style.borderColor = "rgba(184,144,58,0.5)";
-              (e.currentTarget as HTMLElement).style.color = "#b8903a";
-            }}
-            onMouseLeave={(e) => {
-              (e.currentTarget as HTMLElement).style.borderColor = "rgba(17,17,17,0.15)";
-              (e.currentTarget as HTMLElement).style.color = "#111111";
-            }}
           >
             View Our Services
           </a>
         </div>
 
-        {/* Scroll indicator */}
+        <style>{`
+        .hero-cta-primary:hover { opacity: 0.88; transform: translateY(-1px); }
+        .hero-cta-secondary:hover { border-color: rgba(184,144,58,0.5) !important; color: #b8903a !important; }
+      `}</style>
+
+      {/* Scroll indicator */}
         <div
           className="animate-fade-in"
           style={{

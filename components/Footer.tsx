@@ -1,5 +1,3 @@
-"use client";
-
 import ContactForm from "./ContactForm";
 
 const footerLinks = [
@@ -107,23 +105,18 @@ export default function Footer() {
               <a
                 key={l.label}
                 href={l.href}
+                className="footer-link"
                 style={{
                   fontSize: "0.8rem",
                   color: "rgba(17,17,17,0.35)",
                   textDecoration: "none",
                   transition: "color 0.2s",
                 }}
-                onMouseEnter={(e) =>
-                  ((e.target as HTMLElement).style.color = "#b8903a")
-                }
-                onMouseLeave={(e) =>
-                  ((e.target as HTMLElement).style.color =
-                    "rgba(17,17,17,0.35)")
-                }
               >
                 {l.label}
               </a>
             ))}
+            <style>{`.footer-link:hover { color: #b8903a !important; }`}</style>
           </nav>
         </div>
       </footer>

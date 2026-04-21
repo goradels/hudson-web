@@ -34,8 +34,31 @@ export default async function BlogPost({ params }: { params: Promise<{ id: strin
 
   const related = posts.filter((p) => p.id !== post.id).slice(0, 3);
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: post.isoDate,
+    dateModified: post.isoDate,
+    author: {
+      "@type": "Organization",
+      name: "Hudson Web Group",
+      url: "https://hudsonwebgroup.com",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Hudson Web Group",
+      url: "https://hudsonwebgroup.com",
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Nav />
       <main style={{ background: "#fafaf8", minHeight: "100vh" }}>
         {/* Article header */}
@@ -81,9 +104,12 @@ export default async function BlogPost({ params }: { params: Promise<{ id: strin
               >
                 {post.category}
               </span>
-              <span style={{ fontSize: "0.75rem", color: "rgba(17,17,17,0.35)" }}>
+              <time
+                dateTime={post.isoDate}
+                style={{ fontSize: "0.75rem", color: "rgba(17,17,17,0.35)" }}
+              >
                 {post.date}
-              </span>
+              </time>
               <span style={{ fontSize: "0.75rem", color: "rgba(17,17,17,0.35)" }}>
                 {post.readTime}
               </span>

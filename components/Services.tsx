@@ -1,5 +1,3 @@
-"use client";
-
 const services = [
   {
     number: "01",
@@ -42,7 +40,11 @@ export default function Services() {
   return (
     <section
       id="services"
-      style={{ background: "#fafaf8", padding: "8rem 2rem", position: "relative" }}
+      style={{
+        background: "#fafaf8",
+        padding: "8rem 2rem",
+        position: "relative",
+      }}
     >
       <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
         {/* Header */}
@@ -57,7 +59,10 @@ export default function Services() {
           }}
         >
           <div>
-            <span className="section-label" style={{ display: "block", marginBottom: "1rem" }}>
+            <span
+              className="section-label"
+              style={{ display: "block", marginBottom: "1rem" }}
+            >
               Our Services
             </span>
             <h2
@@ -75,8 +80,17 @@ export default function Services() {
               to <span style={{ color: "#b8903a" }}>dominate online.</span>
             </h2>
           </div>
-          <p style={{ color: "rgba(17,17,17,0.4)", fontSize: "0.9rem", maxWidth: "280px", lineHeight: 1.6, margin: 0 }}>
-            A complete suite of digital services designed to work together and accelerate your growth.
+          <p
+            style={{
+              color: "rgba(17,17,17,0.4)",
+              fontSize: "0.9rem",
+              maxWidth: "280px",
+              lineHeight: 1.6,
+              margin: 0,
+            }}
+          >
+            A complete suite of digital services designed to work together and
+            accelerate your growth.
           </p>
         </div>
 
@@ -105,12 +119,38 @@ export default function Services() {
                 ...(i === 4 ? { gridColumn: "1 / -1" } : {}),
               }}
             >
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "1.5rem" }}>
-                <span style={{ fontSize: "0.7rem", fontWeight: 600, letterSpacing: "0.15em", color: "rgba(184,144,58,0.6)" }}>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "flex-start",
+                  marginBottom: "1.5rem",
+                }}
+              >
+                <span
+                  style={{
+                    fontSize: "0.7rem",
+                    fontWeight: 600,
+                    letterSpacing: "0.15em",
+                    color: "rgba(184,144,58,0.6)",
+                  }}
+                >
                   {service.number}
                 </span>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style={{ opacity: 0.2, transition: "opacity 0.3s" }}>
-                  <path d="M3 13L13 3M13 3H5M13 3V11" stroke="#b8903a" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  style={{ opacity: 0.2, transition: "opacity 0.3s" }}
+                >
+                  <path
+                    d="M3 13L13 3M13 3H5M13 3V11"
+                    stroke="#b8903a"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
                 </svg>
               </div>
 
@@ -162,9 +202,17 @@ export default function Services() {
         </div>
 
         {/* CTA */}
-        <div style={{ marginTop: "3.5rem", display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <div
+          style={{
+            marginTop: "3.5rem",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
           <a
             href="#contact"
+            className="services-cta"
             style={{
               display: "inline-flex",
               alignItems: "center",
@@ -180,24 +228,26 @@ export default function Services() {
               letterSpacing: "0.02em",
               transition: "all 0.3s ease",
             }}
-            onMouseEnter={(e) => {
-              (e.currentTarget as HTMLElement).style.background = "rgba(184,144,58,0.06)";
-              (e.currentTarget as HTMLElement).style.borderColor = "rgba(184,144,58,0.6)";
-            }}
-            onMouseLeave={(e) => {
-              (e.currentTarget as HTMLElement).style.background = "transparent";
-              (e.currentTarget as HTMLElement).style.borderColor = "rgba(184,144,58,0.35)";
-            }}
           >
             Discuss your project
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-              <path d="M2 7H12M12 7L7 2M12 7L7 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              <path
+                d="M2 7H12M12 7L7 2M12 7L7 12"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
             </svg>
           </a>
         </div>
       </div>
 
       <style>{`
+        .services-cta:hover {
+          background: rgba(184,144,58,0.06) !important;
+          border-color: rgba(184,144,58,0.6) !important;
+        }
         @media (max-width: 768px) {
           .services-grid { grid-template-columns: 1fr !important; }
           .services-grid > div { border-bottom: 1px solid rgba(0,0,0,0.08) !important; }
